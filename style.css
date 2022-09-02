@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.text-center{
+    text-align: center;
+}
+
+video{
+    width: 100%;
+}
+
+body{
+    background: linear-gradient(to bottom left, #8C4A69, #F24738);
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+}
+
+span.impact-level{
+    color: #777;
+    padding: 1rem 1rem;
+    font-size: 1.25rem;
+
+}
+
+span.return{
+    border-radius: 0rem 1rem 1rem 0rem;
+    background: #F24738;
+    color: #FFF;
+    border: 3px  solid #6d412855;
+    padding: 1rem 4rem;
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+div.mars{
+    width: 60vw;
+    height: 60vw;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    top: 2vh;
+    left: 20vw;
+    background-color: #D95043aa;
+    z-index: -1;
+}
+
+div.thumb{
+    width: 100%;
+    height: 45vh;
+    background-size: cover;
+    filter: contrast(110%) brightness(110%) saturate(130%);
+}
+
+h1{
+    font-size: 6em;
+    font-family: 'Lobster', cursive;
+    color: #FFF;
+    text-shadow:2px 2px 0.25em #000000;
+    margin: 11vh 0 3vh;
+}
+
+h2{
+    color: #6d4128;
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    padding: 2rem;
+}
+
+.inner-pane h2{
+    font-family: 'Bebas Neue', cursive;
+}
+
+h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    color: #444;
+    padding: 1rem 2rem;
+}
+
+div#app{
+    overflow: hidden;
+}
+
+main.main-pane, main.inner-pane{
+    position: relative;
+    margin: 0px auto;
+    background-color: #FFF;
+    border: .5em solid #6d4128;
+    box-shadow: 0 0 .5em .5em #00000022;
+    border-radius: 2em;
+    width: 85vw;
+    height: 75vh;
+    box-sizing: border-box;
+}
+
+main.inner-pane{
+    height: 55vh;
+}
+
+span.level{
+    background-color: #ff632f;
+    padding: .5rem 1rem;
+    color: #eeeeee;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    border-radius: 1rem 0 0 1rem;
+    font-family: 'Bebas Neue', cursive;
+    border: 3px solid #6d412855;
+    border-right: 0;
+}
+
+main.inner-pane span.level{
+    top: 2rem;
+}
+
+main.inner-pane h2{
+    font-size: 3rem;
+    padding-left: 10rem;
+    padding-right: 5rem;
+}
+
+main.inner-pane div.thumb{
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    border: 2px solid #AAA;
+    border-radius: 50%;
+    top: 1rem;
+    left: 1rem;
+}
+
+main.inner-pane p{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 14px;
+    padding: 1.75rem 1rem;
+}
+
+ul{
+    list-style-type: none;
+    overflow-y: scroll;
+    height: calc(63vh);
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+}
+
+ul li img {
+    width: 100%;
+    /*border-radius:  0 0 2em 2em;*/
+}
+
+@media only screen and (min-width: 1000px) {
+    h1{
+        margin: 11vh 0 3vh;
+        font-size: 3em;
+    }
+
+    h2{
+        font-size: 2em;
+        padding: 1rem;
+    }
+
+    h3{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1em;
+        color: #444;
+        padding: 1rem 0;
+    }
+    
+    main.inner-pane h2{
+        font-size: 1.5rem;
+        padding-left: 6rem;
+        padding-right: 5rem;
+        padding-top: 1.7rem;
+    }
+
+    main.inner-pane div.thumb{
+        position: absolute;
+        width: 4rem;
+        height: 4rem;
+        border: 2px solid #AAA;
+        border-radius: 50%;
+        top: 1rem;
+        left: 1rem;
+    }
+    main.inner-pane div.thumb::before {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+    }
+
+    main.inner-pane p{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    span.impact-level{
+        color: #777;
+        padding: 0rem 1rem;
+        font-size: .75rem;
+    }
+
+    div.mars{
+        width: 15vw;
+        height: 15vw;
+        left: 42.5vw;
+    }
+
+    main.main-pane, main.inner-pane{
+        border: 2px solid #6d4128;
+        border-radius: 1em;
+    }
+
+    main.inner-pane{
+        width: 35vw;
+        height: 75vh;
+    }
+
+    span.return{
+        padding: .5rem 2rem;
+        font-size: 1rem;
+    }
+    
+
+    span.level{
+        border: 1px solid #6d412855;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1em;
+        padding: 1rem;
+    }
+
+    div.thumb{
+        width: 100%;
+        height: 20vh;
+        background-size: cover;
+        filter: contrast(110%) brightness(110%) saturate(130%);
+    }
+}
